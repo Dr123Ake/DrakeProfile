@@ -1,194 +1,265 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Liu Yu - Portfolio</title>
-    <link rel="stylesheet" href="./style.css"/>
+    <!-- Add a modern Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <script src="./script.js"></script>
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav>
-      <div id="home">
-        <div class="profile_name">
-          Drake (Liu Yu)
-          <div class="contact_info">
-            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          yu2_liu@mymail.sutd.edu.sg
+    <nav class="navbar">
+      <div class="container nav-content">
+        <!-- Left: Logo / Name -->
+        <div class="nav-left">
+          <h1 class="logo">Drake (Liu Yu)</h1>
+          <div class="contact-info">
+            <img
+              src="html_finalprojimages/envelope.png"
+              alt="Email Icon"
+            />
+            yu2_liu@mymail.sutd.edu.sg
+          </div>
+          <div class="contact-info">
+            <img
+              src="html_finalprojimages/phone.png"
+              alt="Phone Icon"
+            />
+            +65 8244 1353
+          </div>
         </div>
-        <div style="clear:both;"></div>
-        <div class="contact_info">
-          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          +6582441353
-
+        <!-- Right: Nav Links -->
+        <div class="nav-right">
+          <a class="nav-link" href="#about-me">About Me</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#recommendations">Recommendations</a>
         </div>
-        </div>
-        <div class="topdiv">
-          <a class="topmenu" href="#about-me">About Me</a>
-          <a class="topmenu" href="#about-me">Skills</a>
-          <a class="topmenu" href="#about-me">Projects</a>
-          <a class="topmenu" href="#about-me">Recommendations</a>
-          <!-- Add the links for Skills, Projects and Recommendation here -->
-
-        </div>
-      </div>    
+      </div>
     </nav>
 
-    <!-- About Me -->
-    <section id="about-me" class="container">
-      <div>
-        <img src="html_finalprojimages\No_bg.png" class="profile_image"/>
-      </div>
-
-      <div>
-          <h1>
-            Hi, I'm Drake! <img src="https://media.tenor.com/g2OSPTAYwf8AAAAj/join-for-cookies-drake.gif" width="60px"/>
-          </h1>
+    <!-- Hero / About Me Section -->
+    <header id="home" class="hero-section">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h2>Hi, I'm Drake!</h2>
           <p>
-            I am a learner and creator
+            I am a <strong>learner</strong> and <strong>creator</strong>.
           </p>
+          <img
+            src="https://media.tenor.com/g2OSPTAYwf8AAAAj/join-for-cookies-drake.gif"
+            width="60px"
+            alt="Drake GIF"
+          />
+        </div>
+        <div class="hero-image">
+          <img
+            src="html_finalprojimages/No_bg.png"
+            alt="Profile"
+            class="profile-image"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- About Me Section (Optional Extra) -->
+    <section id="about-me" class="section">
+      <div class="container about-me-content">
+        <h2>About Me</h2>
+        <p>
+          I am a motivated individual always looking to learn, solve problems,
+          and collaborate on new and exciting projects. When I'm not coding or
+          exploring the latest technologies, you can find me diving into a good
+          book or trying out new cuisines!
+        </p>
       </div>
     </section>
-    
-    <!-- Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div style="clear:both;"></div>
 
-      <div class="all_skills">
-        <div class="skill">
-          <img src="html_finalprojimages/html5.png"/>
-          <h6>HTML</h6>
-          <!-- <p>ok</p> -->
-        </div>  
-
-        <div class="skill">
-          <img src="html_finalprojimages/js.jpeg"/>
-          <h6>JavaScript</h6>
-          <!-- <p>Starter</p> -->
-        </div> 
-
-        <div class="skill">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png"/>
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-light">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img src="html_finalprojimages/html5.png" alt="HTML5" />
+            <h6>HTML</h6>
+          </div>
+          <div class="skill-card">
+            <img src="html_finalprojimages/js.jpeg" alt="JavaScript" />
+            <h6>JavaScript</h6>
+          </div>
+          <div class="skill-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png"
+              alt="Python"
+            />
             <h6>Python</h6>
-            <!-- <p>Good At</p> -->
-        </div> 
-
-        <div class="skill">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/TensorFlow_logo.svg/1920px-TensorFlow_logo.svg.png"/>
-            <h6>Tensorflow</h6>
-            <!-- <p>ok</p> -->
-        </div>  
-
-        <div class="skill">
-            <img src="https://pytorch.org/assets/images/pytorch-logo.png"/>
-            <h6>Pytorch</h6>
-            <!-- <p>ok</p> -->
-        </div>  
-
-        <!-- Add more skills here -->
-
-
+          </div>
+          <div class="skill-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/TensorFlow_logo.svg/1920px-TensorFlow_logo.svg.png"
+              alt="TensorFlow"
+            />
+            <h6>TensorFlow</h6>
+          </div>
+          <div class="skill-card">
+            <img
+              src="https://pytorch.org/assets/images/pytorch-logo.png"
+              alt="PyTorch"
+            />
+            <h6>PyTorch</h6>
+          </div>
+          <!-- Add more skill cards as needed -->
+        </div>
       </div>
     </section>
-          
-    <!-- Projects -->
-    <section class="projects" id="projects">
-      <h2>
-        Projects
-      </h2>
-      <div style="clear:both;"></div>
 
-        <div id="projects-container" class="projects-container">
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container">
           <div class="project-card">
-            <h3>SUTD freshmore life stimulation game</h3>
+            <h3>SUTD Freshmore Life Simulation Game</h3>
             <ul>
-              <li> Cooperate 4 team mates to design and create a game to stimulate our university life by python without using an external library. In charge of one of the “terms” in the “whole semester” and professors like our simple yet creative way of programming
-                </li>
+              <li>
+                Collaborated with 4 teammates to design and create a Python
+                game that simulates university life without using external
+                libraries.
+              </li>
+              <li>
+                Took charge of programming one of the “terms” in the “whole
+                semester.”
+              </li>
             </ul>
           </div>
-          <hr>
           <div class="project-card">
-            <h3>SUTD Team Project Android app “Hawker Helper” based on Java</h3>
+            <h3>SUTD Team Project: Android App “Hawker Helper” (Java)</h3>
             <ul>
-              <li>Developing an Android app call “Hawker Helper” that facilitate Hawkers’ stalls to check their stock using mainly Java code. Building a data base that aim to collect the information using SQLite database. Able to cooperate with other team members to build the app on Android Studio</li>
+              <li>
+                Developed an Android app that helps hawker stalls check their
+                stock using Java and SQLite.
+              </li>
+              <li>
+                Collaborated with team members using Android Studio to build a
+                functional and user-friendly application.
+              </li>
             </ul>
           </div>
-          <hr>
-    </div>
+        </div>
+      </div>
     </section>
-    <div style="clear:both;"></div>
 
-    <!-- Recommendations -->
-    <section id="recommendations">
-      <h2>Recommendations</h2>
-      <div style="clear:both;"></div>
-      <div class="all_recommendations" id="all_recommendations">
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Drake is a coding genius. He's a swift problem solver and an invaluable asset to any tech team. His dedication and innovation drive projects to success.
-          <span>&#8221;</span>
-        </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Drake is a marketing maverick! His creativity knows no bounds, and he's a social media wizard. Drake can make any campaign trend with his strategic brilliance.
-          <span>&#8221;</span>
-        </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Drake, the data whisperer! His data analysis skills are unmatched. Drake extracts hidden insights effortlessly, making him an indispensable member of any analytics team. 
-          <span>&#8221;</span>
-        </div>
-        <div class="recommendation">
+    <!-- Recommendations Section -->
+    <section id="recommendations" class="section bg-light">
+      <div class="container">
+        <h2 class="section-title">Recommendations</h2>
+        <div class="recommendations-grid" id="all_recommendations">
+          <div class="recommendation-card">
             <span>&#8220;</span>
-            Drake is the quantum chef of our dreams! With a taste for innovation, he serves up dishes from parallel culinary universes. Prepare for a mind-bending gastronomic adventure.
+            Drake is a coding genius. He's a swift problem solver and an
+            invaluable asset to any tech team. His dedication and innovation
+            drive projects to success.
             <span>&#8221;</span>
           </div>
-          <div class="recommendation">
+          <div class="recommendation-card">
             <span>&#8220;</span>
-            Drake is the sound sculptor we all need! He transforms ordinary noise into symphonic masterpieces. His sonic wizardry turns chaos into harmony, creating auditory magic. 
+            Drake is a marketing maverick! His creativity knows no bounds, and
+            he's a social media wizard. Drake can make any campaign trend with
+            his strategic brilliance.
             <span>&#8221;</span>
           </div>
+          <div class="recommendation-card">
+            <span>&#8220;</span>
+            Drake, the data whisperer! His data analysis skills are unmatched.
+            Drake extracts hidden insights effortlessly, making him an
+            indispensable member of any analytics team.
+            <span>&#8221;</span>
+          </div>
+          <div class="recommendation-card">
+            <span>&#8220;</span>
+            Drake is the quantum chef of our dreams! With a taste for
+            innovation, he serves up dishes from parallel culinary universes.
+            Prepare for a mind-bending gastronomic adventure.
+            <span>&#8221;</span>
+          </div>
+          <div class="recommendation-card">
+            <span>&#8220;</span>
+            Drake is the sound sculptor we all need! He transforms ordinary
+            noise into symphonic masterpieces. His sonic wizardry turns chaos
+            into harmony, creating auditory magic.
+            <span>&#8221;</span>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Recommendation Form -->
-    <section id="contact">
-      <div class="flex_center">
+    <section id="contact" class="section">
+      <div class="container form-container">
         <fieldset>
-          <legend class="introduction">Leave a Recommendation</legend>          
-          <input type="text" placeholder="Name (Optional)"> <br/>
-          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
-          <div class="flex_center">
-            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
-          </div>
+          <legend class="form-title">Leave a Recommendation</legend>
+          <input
+            type="text"
+            placeholder="Name (Optional)"
+            id="recommendation-name"
+          />
+          <textarea
+            id="new_recommendation"
+            cols="30"
+            rows="5"
+            placeholder="Your recommendation..."
+          ></textarea>
+          <button id="recommend_btn" onclick="addRecommendation()">
+            Submit
+          </button>
         </fieldset>
       </div>
     </section>
 
+    <!-- Scroll to Top Button -->
     <div class="iconbutton">
       <a href="#home">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#ffffff"
+          width="48px"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
         </svg>
       </a>
     </div>
 
-    <div class="popup" id="popup" class="flex_center">
-      <img src="html_finalprojimages/checkmark--outline.svg"/>
+    <!-- Pop-up -->
+    <div class="popup" id="popup">
+      <img src="html_finalprojimages/checkmark--outline.svg" alt="Checkmark" />
       <h3>Thanks for leaving a recommendation!</h3>
       <button onclick="showPopup(false)">Ok</button>
     </div>
+
+    <!-- Embedded Chatbot -->
     <script>
       window.embeddedChatbotConfig = {
-      chatbotId: "t2Pvw5nrDZwmCcmTwXaUu",
-      domain: "www.chatbase.co"
-      }
-      </script>
-      <script
+        chatbotId: "t2Pvw5nrDZwmCcmTwXaUu",
+        domain: "www.chatbase.co",
+      };
+    </script>
+    <script
       src="https://www.chatbase.co/embed.min.js"
       chatbotId="t2Pvw5nrDZwmCcmTwXaUu"
       domain="www.chatbase.co"
-      defer>
-      </script>
+      defer
+    ></script>
   </body>
 </html>
